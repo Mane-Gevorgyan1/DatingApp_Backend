@@ -73,10 +73,6 @@ module.exports = mongoose => {
                 type: Number,
                 default: null,
             },
-            token: {
-                type: String,
-                default: null
-            },
             profession: [String],
             spokenLanguages: [String],
             interests: [String],

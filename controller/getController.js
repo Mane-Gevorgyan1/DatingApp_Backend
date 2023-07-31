@@ -3,9 +3,8 @@ const User = db.user
 
 class GetController {
     static async getAllUsers(req, res) {
-        const users = await User.find()
-        res.send({ success: true, users })
+        res.send({ user: req.user })
     }
 }
-
+ 
 module.exports = GetController

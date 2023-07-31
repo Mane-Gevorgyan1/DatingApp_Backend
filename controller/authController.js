@@ -88,6 +88,10 @@ class AuthController {
         }
     }
 
+    static async login(req, res) {
+        res.send({ user: req.user })
+    }
+
 }
 
 module.exports = AuthController
