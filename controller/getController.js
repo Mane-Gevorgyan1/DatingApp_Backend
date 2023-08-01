@@ -6,5 +6,5 @@ class GetController {
         res.send({ user: req.user })
     }
 }
- 
+
 module.exports = GetController

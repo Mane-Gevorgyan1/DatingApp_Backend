@@ -92,6 +92,11 @@ class AuthController {
         res.send({ user: req.user })
     }
 
+    static async googleUser(req, res) {
+        res.send(req.user)
+        // const user = await new User({...req.body})
+    }
+
 }
 
 module.exports = AuthController
